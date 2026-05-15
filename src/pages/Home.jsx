@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
+import bodyBg from '../assets/body.png';
+import netflixBg from '../assets/netflix.png';
 
 export default function Home() {
   return (
     <div
       className="min-vh-100 d-flex flex-column text-white"
       style={{
-        backgroundImage: "url('/img/body.png')",
+        backgroundImage: `url(${bodyBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -14,7 +16,7 @@ export default function Home() {
       <div className="container flex-grow-1">
         <div className="row bg-dark text-white p-3">
           <div className="col">
-            <img className="img-fluid" src="/img/netflix.png" width={250} alt="Logo" /> |
+            <img className="img-fluid" src={netflixBg} width={250} alt="Logo" /> |
           </div>
         </div>
 
