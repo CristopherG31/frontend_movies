@@ -34,7 +34,7 @@ export default function Movies() {
           {movies.map((movie) => (
             <div className="movie-card" key={movie.id}>
               <img
-                src={`https://movies-bit.onrender.com//storage/covers/${movie.cover}`}
+                src={`${movie.cover}`}
                 alt="cover"
               />
               <div className="movie-info">
