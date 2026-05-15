@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { getMovies, deleteMovie } from '../api/movieService'
 import './Movies.css'
-
+import bodyBg from '../assets/body.png';
 export default function Movies() {
   const [movies, setMovies] = useState([])
 
@@ -21,7 +21,7 @@ export default function Movies() {
     <div
       className="min-vh-100 d-flex flex-column text-white"
       style={{
-        backgroundImage: "url('/img/body.png')",
+        backgroundImage: `url(${bodyBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
